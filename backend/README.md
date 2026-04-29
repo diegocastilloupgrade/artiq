@@ -39,11 +39,19 @@ npm install
 
 ### Environment Configuration
 
-Copy `.env.example` to `.env` and update values:
+The application uses a centralized configuration system. See [CONFIGURATION.md](CONFIGURATION.md) for details.
+
+**Quick start:**
 
 ```bash
+# Copy example config
 cp .env.example .env
+
+# Edit with your values (dev defaults are provided)
+# nano .env
 ```
+
+**For staging/production**, follow the environment-specific setup in CONFIGURATION.md.
 
 ### Database
 
