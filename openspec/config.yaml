@@ -1,0 +1,177 @@
+schema: spec-driven
+
+specsPath: openspec/specs
+
+context:
+  project:
+    name: affiliate-content-mvp
+    displayName: Internal Affiliate Content Platform MVP
+    description: >
+      Internal platform to detect trending topics, associate affiliate products,
+      generate AI-assisted single-product articles, publish them in an existing CMS,
+      and measure performance with GA4 + GTM.
+    type: internal-product
+    stage: mvp
+    language: en
+    primaryAudience: internal editorial and SEO team
+
+  business:
+    objective: >
+      Validate an internal, scalable affiliate-content operating model based on
+      trends, product selection, AI-assisted drafting, editorial review, publication,
+      and analytics.
+    validatedFlow: >
+      topic -> product -> prompts -> content -> review -> publication -> measurement
+    outOfScope:
+      - SaaS for external clients
+      - custom CMS
+      - multiple affiliate providers in v1
+      - multi-product articles
+      - advanced cross-linking automation
+      - advanced SEO template management
+      - first-party analytics pipeline in v1
+
+  productConstraints:
+    articleTypes:
+      - single-product
+    affiliateProviders:
+      - amazon
+    cms:
+      strategy: existing-cms-only
+      candidates:
+        - wordpress
+        - strapi
+    analytics:
+      primary: ga4
+      instrumentation: gtm
+    seoTemplates:
+      supported: 1
+    contentArchitecture:
+      domains: 1
+      advancedCrossLinking: false
+
+  users:
+    roles:
+      - admin
+      - redactor
+      - lector
+    primaryBackofficeRoles:
+      - admin
+      - redactor
+
+  domainEntities:
+    - Topic
+    - Product
+    - ArticleDraft
+    - ProductPiece
+    - Article
+    - CmsPublication
+    - AnalyticsSnapshot
+    - LinkRecord
+    - LinkIncident
+    - User
+
+  functionalModules:
+    - topic-management
+    - affiliate-product-selection
+    - assisted-content-generation
+    - cms-publication
+    - analytics
+    - broken-link-monitoring
+
+  decisions:
+    - Use OpenSpec as the source of truth for specs and changes
+    - Keep specs aligned with the functional document v1
+    - Use GA4 as the primary analytics source
+    - Use GTM as the preferred instrumentation layer
+    - Use Amazon as the first affiliate provider
+    - Use an existing CMS for publication
+    - Require human review before publication
+    - Keep provider integrations behind adapters
+    - Keep CMS integration behind an adapter
+    - Keep AI generation provider replaceable
+
+  integrations:
+    trendSources:
+      - google-trends
+    affiliate:
+      - amazon
+    cmsCandidates:
+      - wordpress
+      - strapi
+    analytics:
+      - ga4
+      - gtm
+    aiGeneration:
+      - llm-provider-to-be-confirmed
+
+  architecture:
+    style: modular-monolith
+    layers:
+      - presentation
+      - application
+      - domain
+      - infrastructure
+    preferredPatterns:
+      - adapter-pattern
+      - repository-pattern
+      - service-layer
+      - explicit-state-transitions
+
+  development:
+    ide:
+      - visual-studio-code
+    aiAssistant:
+      - github-copilot-chat
+    methodology:
+      - spec-driven-development
+    workflow:
+      - spec-first
+      - design-before-implementation
+      - tasks-before-coding
+      - small-incremental-prs
+      - validate-against-spec
+
+  quality:
+    requirements:
+      - traceability-between-topic-product-article
+      - editable-ai-generated-content
+      - no-auto-publication
+      - backoffice-role-separation
+      - observable-external-integrations
+      - minimal-broken-link-operability
+    codingStandards:
+      - keep business rules outside UI
+      - avoid provider-specific logic in domain layer
+      - avoid CMS-specific logic in domain layer
+      - make integrations replaceable
+      - prefer explicit models over ad-hoc payloads
+      - preserve auditability on key transitions
+
+instructions:
+  general: >
+    Always use openspec/specs as the current source of truth and openspec/changes
+    for proposed changes. Do not implement functionality that is out of MVP scope
+    unless a new approved change explicitly introduces it.
+
+  implementation: >
+    Before generating code, read the relevant spec.md and the active change proposal,
+    design, and tasks. Prefer small, reviewable increments. Do not skip task breakdown.
+
+  architecture: >
+    Preserve the modular separation between topic management, affiliate product selection,
+    content generation, CMS publication, analytics, and broken-link monitoring.
+    External systems must be accessed through adapters.
+
+  editorial: >
+    The MVP supports only single-product articles. Generated content must remain editable.
+    Human review is mandatory before publication. CMS is the source of truth for published content.
+
+  analytics: >
+    Treat GA4 as the primary analytics platform and GTM as the preferred instrumentation layer.
+    Design analytics identifiers so article, topic, and product relationships can be traced.
+
+  scopeControl: >
+    Reject or explicitly flag requests that introduce multi-provider affiliate support,
+    multi-product article types, advanced cross-linking automation, advanced SEO template
+    management, or custom CMS functionality unless they are added through a new change proposal.
