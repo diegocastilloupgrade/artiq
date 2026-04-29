@@ -13,3 +13,6 @@ Entradas:
 - 2026-04-29 15:46 | governance | Creada rama chore/governance-traceability con reglas persistentes | completado
 - 2026-04-29 15:46 | pr-creation | Abierta PR #2 con instrucciones de trazabilidad y changelog | completado
 - 2026-04-29 15:48 | merge | Mergeada PR #2 en main, rama eliminada local y remota | completado
+- 2026-04-29 15:48 | docs | Creada rama docs/update-changelog para actualizar registro | completado
+- 2026-04-29 15:48 | pr-creation | Abierta PR #3 para actualizar changelog | completado
+- 2026-04-29 15:48 | merge | Mergeada PR #3 en main, todas las ramas sincronizadas | completado
