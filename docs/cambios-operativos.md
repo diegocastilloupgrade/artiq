@@ -192,3 +192,8 @@ Entradas:
 - 2026-04-30 15:56 | analisis | Revisadas fuentes de datos de topics (flujo actual y fuentes previstas segun OpenSpec/T-3.04/T-3.05) | validado
 - 2026-04-30 15:59 | backend | Implementado seed automatico en TopicsService para poblar topics de prueba cuando no existan registros | completado
 - 2026-04-30 16:00 | api | Validado GET /topics tras seed: endpoint devuelve listado con datos de prueba | validado
+- 2026-04-30 18:20 | git | Creada rama feat/T-3.05-topic-import-job para implementacion del job de importacion | completado
+- 2026-04-30 18:20 | backend | Creado backend/src/trends/trend-import.service.ts: TrendImportService con de-duplicacion por nombre | completado
+- 2026-04-30 18:20 | backend | Creado backend/src/trends/trend-import.controller.ts: POST /trends/import protegido (ADMIN) | completado
+- 2026-04-30 18:20 | backend | Actualizado backend/src/trends/trends.module.ts: importa TopicsModule, registra TrendImportController y TrendImportService | completado
+- 2026-04-30 18:20 | build | npx tsc --noEmit exitoso sin errores para T-3.05 | validado
