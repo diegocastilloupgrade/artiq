@@ -73,7 +73,7 @@ Tasks are grouped by area. They are intended to be implemented incrementally.
 
 ## 3. Topic management
 
-### T-3.01 – Topic CRUD (manual)
+### T-3.01 – Topic CRUD (manual) ✅
 
 - Implement backend endpoints (or services) to:
   - create a topic manually,
