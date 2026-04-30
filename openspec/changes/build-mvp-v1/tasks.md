@@ -52,7 +52,7 @@ Tasks are grouped by area. They are intended to be implemented incrementally.
   - `User`
 - Implement in-memory or schema definitions depending on persistence choice.
 
-### T-2.02 – Set up database and migrations
+### T-2.02 – Set up database and migrations ✅
 
 - Choose and configure a database for the MVP.
 - Create migrations (or equivalent) for all core tables/collections.
