@@ -168,3 +168,12 @@ Entradas:
 - 2026-04-30 12:41 | github | PR #20 creado y mergeado (squash) a main | completado
 - 2026-04-30 12:41 | jira | ARTIQ-11 transicionado a En revisión y luego a Finalizado | completado
 - 2026-04-30 12:41 | docs | T-3.03 marcado ✅ en tasks.md | completado
+- 2026-04-30 13:00 | jira | Creado ARTIQ-12: T-3.04 External trend source adapter y transicionado a En curso | completado
+- 2026-04-30 13:00 | git | Creada rama feat/T-3.04-trend-source-adapter desde main actualizado | completado
+- 2026-04-30 13:01 | backend | Implementado TrendsModule: TrendSourceAdapter interface, TrendTopicDto, GoogleTrendsAdapter stub, TrendsModule; app.module.ts actualizado | completado
+- 2026-04-30 13:01 | backend | Build TypeScript validado (npx tsc --noEmit, sin errores) | completado
+- 2026-04-30 13:01 | frontend | Build Angular validado sin errores (hash b5318d10cf62e111) | completado
+- 2026-04-30 13:01 | git | Commit feat(T-3.04): implement TrendSourceAdapter stub (GoogleTrendsAdapter) – 5 ficheros, 140 inserciones (0cde47a) | completado
+- 2026-04-30 13:01 | github | PR #22 creado y mergeado (squash) a main | completado
+- 2026-04-30 13:05 | jira | ARTIQ-12 transicionado a En revisión y luego a Finalizado | completado
+- 2026-04-30 13:05 | docs | T-3.04 marcado ✅ en tasks.md | completado
