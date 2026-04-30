@@ -197,3 +197,7 @@ Entradas:
 - 2026-04-30 18:20 | backend | Creado backend/src/trends/trend-import.controller.ts: POST /trends/import protegido (ADMIN) | completado
 - 2026-04-30 18:20 | backend | Actualizado backend/src/trends/trends.module.ts: importa TopicsModule, registra TrendImportController y TrendImportService | completado
 - 2026-04-30 18:20 | build | npx tsc --noEmit exitoso sin errores para T-3.05 | validado
+- 2026-04-30 18:24 | docs | T-3.05 marcado ✅ en tasks.md | completado
+- 2026-04-30 18:24 | git | Commit feat(trends): T-3.05 topic import job — 5 ficheros, 74 inserciones (3b113dc) | completado
+- 2026-04-30 18:24 | github | PR #24 creado y mergeado (squash) a main | completado
+- 2026-04-30 18:24 | jira | ARTIQ-13 creado y transicionado a Finalizado | completado
