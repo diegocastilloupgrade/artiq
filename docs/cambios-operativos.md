@@ -100,3 +100,16 @@ Entradas:
 - 2026-04-30 10:58 | pr-creation | Abierta PR #12 feat(domain): T-2.01 Define core TypeORM domain entities | completado
 - 2026-04-30 10:59 | jira | ARTIQ-6 transicionado a Finalizado | completado
 - 2026-04-30 10:59 | docs | tasks.md: T-2.01 marcado como completado (✅) | completado
+- 2026-05-01 | git | Creada rama feat/T-2.02-database-migrations para T-2.02 | completado
+- 2026-05-01 | jira | ARTIQ-7 transicionado a En curso | configurado
+- 2026-05-01 | database | Creado backend/src/database/data-source.ts con AppDataSource para TypeORM CLI | completado
+- 2026-05-01 | database | Verificado docker-compose.yml existente (postgres:15-alpine + redis:7-alpine, healthchecks) | validado
+- 2026-05-01 | migration | Creada backend/src/database/migrations/1746000000000-InitialSchema.ts con 9 tablas, 11 enums y todas FKs | completado
+- 2026-05-01 | app-module | Actualizado app.module.ts con TypeOrmModule.forRootAsync y 9 entidades registradas | completado
+- 2026-05-01 | package-json | Añadido flag -d src/database/data-source.ts a migration:generate, migration:run y migration:revert | completado
+- 2026-05-01 | build | npm run build exitoso sin errores tras configuracion TypeORM en AppModule | validado
+- 2026-05-01 | docs | tasks.md: T-2.02 marcado como completado (✅) | completado
+- 2026-05-01 | git | Commit feat(database): T-2.02 configure TypeORM, initial migration and entities (6 archivos, 388 inserciones) | completado
+- 2026-05-01 | git | Push de rama feat/T-2.02-database-migrations al remoto | completado
+- 2026-05-01 | pr-creation | Abierta PR #13 feat(database): T-2.02 Set up database and migrations | completado
+- 2026-05-01 | jira | ARTIQ-7 transicionado a Finalizado | completado
