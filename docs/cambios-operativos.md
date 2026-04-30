@@ -201,3 +201,13 @@ Entradas:
 - 2026-04-30 18:24 | git | Commit feat(trends): T-3.05 topic import job — 5 ficheros, 74 inserciones (3b113dc) | completado
 - 2026-04-30 18:24 | github | PR #24 creado y mergeado (squash) a main | completado
 - 2026-04-30 18:24 | jira | ARTIQ-13 creado y transicionado a Finalizado | completado
+- 2026-04-30 18:34 | backend | Creado backend/src/products/amazon-config.entity.ts para almacenar credenciales Amazon | completado
+- 2026-04-30 18:34 | backend | Creado backend/src/products/amazon-provider.adapter.ts: AmazonProviderAdapter con searchProducts() y getProductById() | completado
+- 2026-04-30 18:34 | backend | Actualizado backend/src/products/products.service.ts: agregados searchOnAmazon() y setAmazonConfig() | completado
+- 2026-04-30 18:34 | backend | Creado backend/src/products/products.controller.ts: POST /products/search (ADMIN/REDACTOR) y POST /products/config/amazon (ADMIN) | completado
+- 2026-04-30 18:34 | backend | Actualizado backend/src/products/products.module.ts: registrado AmazonConfig entity y AmazonProviderAdapter | completado
+- 2026-04-30 18:34 | build | npx tsc --noEmit exitoso sin errores para T-4.01 y T-4.02 (backend) | validado
+- 2026-04-30 18:36 | backend | Actualizado backend/src/products/products.service.ts: agregado searchProductsForTopic() | completado
+- 2026-04-30 18:36 | backend | Actualizado backend/src/products/products.controller.ts: POST /products/search-by-topic/:topicId | completado
+- 2026-04-30 18:36 | backend | Actualizado backend/src/products/products.module.ts: importado TopicsModule para inyeccion de TopicsService | completado
+- 2026-04-30 18:36 | build | npx tsc --noEmit exitoso sin errores para T-4.03 (backend) | validado
