@@ -95,3 +95,8 @@ Entradas:
 - 2026-04-30 10:57 | entity | Creada backend/src/users/user.entity.ts (User, UserStatus enum, importa UserRole) | completado
 - 2026-04-30 10:57 | ts-fix | Añadido strictPropertyInitialization: false en backend/tsconfig.json para compatibilidad TypeORM | completado
 - 2026-04-30 10:57 | build | npm run build exitoso sin errores tras correccion de strictPropertyInitialization | validado
+- 2026-04-30 10:58 | git | Commit feat(domain): T-2.01 define core TypeORM domain entities (11 archivos, 534 inserciones) | completado
+- 2026-04-30 10:58 | git | Push de rama feat/T-2.01-domain-entities al remoto | completado
+- 2026-04-30 10:58 | pr-creation | Abierta PR #12 feat(domain): T-2.01 Define core TypeORM domain entities | completado
+- 2026-04-30 10:59 | jira | ARTIQ-6 transicionado a Finalizado | completado
+- 2026-04-30 10:59 | docs | tasks.md: T-2.01 marcado como completado (✅) | completado

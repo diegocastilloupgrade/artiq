@@ -39,7 +39,7 @@ Tasks are grouped by area. They are intended to be implemented incrementally.
 
 ## 2. Domain model and persistence
 
-### T-2.01 – Define core domain entities
+### T-2.01 – Define core domain entities ✅
 
 - Implement domain models for:
   - `Topic`
