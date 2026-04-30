@@ -70,3 +70,14 @@ Entradas:
 - 2026-04-30 10:16 | jira-validacion | Verificado por JQL: ARTIQ-2/3/4 Finalizado y ARTIQ-5/6/7 en Por hacer | validado
 - 2026-04-30 10:20 | mcp-fix | Diagnosticado error MCP -32601: mongodb-mcp-server falla con exit code 1 por args ${input:...} vacios | validado
 - 2026-04-30 10:20 | mcp-fix | Añadido "disabled": true a io.github.mongodb-js/mongodb-mcp-server en mcp.json de VS Code | configurado
+- 2026-05-01 | feat-t1-03 | Creada rama feat/T-1.03-jwt-auth para implementacion de autenticacion JWT | completado
+- 2026-05-01 | deps | Instalado bcrypt@5.1.1 y @types/bcrypt, actualizado package.json | completado
+- 2026-05-01 | auth-module | Creados user-role.enum, login.dto, roles.decorator, current-user.decorator, jwt-auth.guard | completado
+- 2026-05-01 | auth-module | Creados roles.guard, jwt.strategy, auth.service, auth.controller, auth.module | completado
+- 2026-05-01 | users-module | Creados user.interface, users.service (in-memory seed), users.module | completado
+- 2026-05-01 | app-bootstrap | Creados app.module.ts con guards globales y main.ts con ValidationPipe | completado
+- 2026-05-01 | ts-fix | Corregidos errores TypeScript strict en staging.ts y production.ts (as string casts) | completado
+- 2026-05-01 | build | npm run build exitoso sin errores en backend | validado
+- 2026-05-01 | git | Commit de T-1.03 (23 archivos, 11217 inserciones) | completado
+- 2026-05-01 | pr-creation | Abierta PR #10 feat(auth): JWT authentication and authorization (T-1.03) | completado
+- 2026-05-01 | jira | ARTIQ-5 transicionado a Finalizado | completado
