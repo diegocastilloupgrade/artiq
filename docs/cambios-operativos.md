@@ -81,3 +81,17 @@ Entradas:
 - 2026-05-01 | git | Commit de T-1.03 (23 archivos, 11217 inserciones) | completado
 - 2026-05-01 | pr-creation | Abierta PR #10 feat(auth): JWT authentication and authorization (T-1.03) | completado
 - 2026-05-01 | jira | ARTIQ-5 transicionado a Finalizado | completado
+- 2026-04-30 | git | PR #11 docs/T-1.03-cambios-log mergeada en main | completado
+- 2026-04-30 | git | Rama docs/T-1.03-cambios-log eliminada, main sincronizado con origin (16429d9) | completado
+- 2026-04-30 10:50 | git | Creada rama feat/T-2.01-domain-entities para entidades de dominio | completado
+- 2026-04-30 10:51 | entity | Creada backend/src/topics/topic.entity.ts (Topic, TopicSource, TopicType, TopicStatus enums) | completado
+- 2026-04-30 10:52 | entity | Creada backend/src/products/product.entity.ts (Product, ProductProvider enum) | completado
+- 2026-04-30 10:53 | entity | Creada backend/src/drafts/article-draft.entity.ts (ArticleDraft, ArticleType, ArticleDraftStatus enums) | completado
+- 2026-04-30 10:54 | entity | Creada backend/src/drafts/product-piece.entity.ts (ProductPiece) | completado
+- 2026-04-30 10:55 | entity | Creada backend/src/cms/cms-publication.entity.ts (CmsPublication) | completado
+- 2026-04-30 10:56 | entity | Creada backend/src/analytics/analytics-snapshot.entity.ts (AnalyticsSnapshot, AnalyticsSource enum) | completado
+- 2026-04-30 10:57 | entity | Creada backend/src/link-monitoring/link-record.entity.ts (LinkRecord, LinkType enum) | completado
+- 2026-04-30 10:57 | entity | Creada backend/src/link-monitoring/link-incident.entity.ts (LinkIncident, LinkIncidentStatus enum) | completado
+- 2026-04-30 10:57 | entity | Creada backend/src/users/user.entity.ts (User, UserStatus enum, importa UserRole) | completado
+- 2026-04-30 10:57 | ts-fix | Añadido strictPropertyInitialization: false en backend/tsconfig.json para compatibilidad TypeORM | completado
+- 2026-04-30 10:57 | build | npm run build exitoso sin errores tras correccion de strictPropertyInitialization | validado
