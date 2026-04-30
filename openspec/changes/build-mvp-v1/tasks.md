@@ -118,28 +118,31 @@ Tasks are grouped by area. They are intended to be implemented incrementally.
 
 ## 4. Affiliate product selection (Amazon)
 
-### T-4.01 – Affiliate provider configuration
+### ✅ T-4.01 – Affiliate provider configuration
 
 - Implement a configuration UI and storage for Amazon affiliate:
   - access keys,
   - tracking IDs,
   - region/config parameters.
 - Restrict access to Administradores.
+- Backend implemented: AmazonConfig entity + POST /products/config/amazon endpoint (ADMIN only)
 
-### T-4.02 – AffiliateProviderAdapter (Amazon)
+### ✅ T-4.02 – AffiliateProviderAdapter (Amazon)
 
 - Implement `AffiliateProviderAdapter` with methods such as:
   - `searchProducts(query, options)`,
   - `getProductById(providerProductId)`.
 - Map Amazon responses into internal `Product` entities.
 - Store raw payload as needed for debugging.
+- Implemented: AmazonProviderAdapter with mock search results for MVP
 
-### T-4.03 – Product search from topic
+### ✅ T-4.03 – Product search from topic
 
 - Implement backend endpoint/service that:
   - receives a topic ID and optional extra keywords,
   - calls `AffiliateProviderAdapter` to retrieve candidate products,
   - returns normalized product data.
+- Implemented: POST /products/search-by-topic/:topicId with integration to TopicsService
 
 ### T-4.04 – Product search UI
 
