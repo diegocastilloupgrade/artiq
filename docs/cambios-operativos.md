@@ -163,3 +163,8 @@ Entradas:
 - 2026-04-30 12:23 | git | Creada rama docs/T-3.02-cierre-log para registrar cierre operativo final | completado
 - 2026-04-30 12:30 | jira | Creado ARTIQ-11: T-3.03 Topic detail view y transicionado a En curso | completado
 - 2026-04-30 12:30 | git | Creada rama feat/T-3.03-topic-detail-view desde main actualizado | completado
+- 2026-04-30 12:41 | frontend | Build Angular validado sin errores tras fix parseCsv null→undefined | completado
+- 2026-04-30 12:41 | git | Commit y push feat(T-3.03): topic detail view (10 ficheros, 399 inserciones) | completado
+- 2026-04-30 12:41 | github | PR #20 creado y mergeado (squash) a main | completado
+- 2026-04-30 12:41 | jira | ARTIQ-11 transicionado a En revisión y luego a Finalizado | completado
+- 2026-04-30 12:41 | docs | T-3.03 marcado ✅ en tasks.md | completado
