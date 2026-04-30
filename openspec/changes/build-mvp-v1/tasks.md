@@ -91,7 +91,7 @@ Tasks are grouped by area. They are intended to be implemented incrementally.
   - supports filtering by status and type,
   - allows sorting by created_at and priority.
 
-### T-3.03 – Topic detail view
+### ✅ T-3.03 – Topic detail view
 
 - Implement a view for topic detail:
   - shows full topic data,
