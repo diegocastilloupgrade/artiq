@@ -1,0 +1,72 @@
+# Bulk create - ARTIQ initial issues
+
+Uso:
+1) En Jira abre: Create -> Create multiple issues (o Bulk create)
+2) Proyecto: ARTIQ
+3) Tipo por defecto: Task
+4) Pega el bloque siguiente (cada issue separado por una línea en blanco)
+
+Summary: Authentication & Roles (T-1.03)
+Description:
+OpenSpec Reference: T-1.03
+Source: openspec/changes/build-mvp-v1/tasks.md
+
+Objetivo:
+Implementar autenticación para backoffice con control por roles.
+
+Acceptance Criteria:
+- Implementar autenticación JWT para usuarios de backoffice.
+- Definir y aplicar roles: admin, redactor, lector.
+- Restringir acceso al backoffice solo a usuarios autenticados.
+- Implementar validaciones de rol para funcionalidades solo-admin.
+
+Implementation Notes:
+- Módulo principal: backend/src/auth.
+- Incluir guards y decorators reutilizables para roles.
+- Añadir endpoint de login que retorne token JWT.
+
+Labels: openspec,mvp-v1,backend,auth
+
+Summary: Define Domain Entities (T-2.01)
+Description:
+OpenSpec Reference: T-2.01
+Source: openspec/changes/build-mvp-v1/tasks.md
+
+Objetivo:
+Definir el modelo de dominio base del MVP y sus invariantes.
+
+Acceptance Criteria:
+- Definir entidades: Topic, Product, ArticleDraft, ProductPiece, Article/CmsPublication, LinkRecord, LinkIncident, User.
+- Definir reglas de negocio e invariantes por entidad.
+- Mantener consistencia con arquitectura y módulos del proyecto.
+
+Implementation Notes:
+- Coordinar con TypeORM para persistencia posterior.
+- Preparar estructura para migraciones en T-2.02.
+
+Labels: openspec,mvp-v1,backend,domain-model
+
+Summary: Database Setup & Migrations (T-2.02)
+Description:
+OpenSpec Reference: T-2.02
+Source: openspec/changes/build-mvp-v1/tasks.md
+
+Objetivo:
+Configurar persistencia y esquema inicial de base de datos.
+
+Acceptance Criteria:
+- Configurar esquema base de base de datos para entidades del dominio.
+- Crear migraciones iniciales para tablas y relaciones.
+- Validar ejecución de migraciones en entorno local.
+
+Implementation Notes:
+- Base objetivo: PostgreSQL.
+- ORM objetivo: TypeORM.
+- Evitar synchronize en producción y asegurar estrategia migración-first.
+
+Labels: openspec,mvp-v1,backend,database,migrations
+
+# Recomendado después de crear:
+- Vincular cada tarea al Epic: Build MVP v1
+- Asignarte las 3 tareas
+- Prioridad sugerida: T-1.03 (High), T-2.01 (High), T-2.02 (High)

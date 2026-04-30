@@ -34,3 +34,39 @@ Entradas:
 - 2026-04-29 16:00 | commit | Commit de T-1.02 (11 archivos, 833 lineas) | completado
 - 2026-04-29 16:00 | pr-creation | Abierta PR #7 con sistema de configuración T-1.02 | completado
 - 2026-04-29 16:01 | merge | Mergeada PR #7 en main, configuración base lista | completado
+- 2026-04-29 16:01 | merge | Mergeada PR #7 en main, configuración base lista | completado
+- 2026-04-29 16:10 | jira-docs | Creada guía JIRA_SETUP.md con mapeo de OpenSpec tasks | completado
+- 2026-04-29 16:11 | git-branch | Rama docs/jira-integration-setup creada y commiteada | completado
+- 2026-04-29 16:11 | pr-creation | Abierta PR #9 con guía Jira | completado
+- 2026-04-29 16:12 | merge | Mergeada PR #9 en main, documentación Jira integrada | completado
+- 2026-04-29 16:13 | jira-issues | Inicio de creación de issues iniciales en proyecto ARTIQ | en progreso
+- 2026-04-29 16:15 | jira-issues | Intento de crear 3 issues por API bloqueado por falta de consentimiento Cloud ID | error
+- 2026-04-29 16:15 | jira-auth | Pendiente autorización explícita del Cloud ID para continuar automatización | en espera
+- 2026-04-29 16:17 | jira-auth | Reintento de consulta mínima para disparar consentimiento del Cloud ID | error
+- 2026-04-29 16:20 | jira-auth | Guiada autorización manual en panel de permisos Copilot/MCP por ausencia de popup | configuracion
+- 2026-04-29 16:25 | jira-auth | Ajustada guía a opción disponible "Tools set" para habilitar acceso Atlassian | configuracion
+- 2026-04-29 16:27 | jira-auth | Confirmado que "Tools set" solo ofrece crear archivo y no gestión de permisos | validado
+- 2026-04-29 16:32 | jira-issues | Reintento de creación de 3 tareas iniciales tras reautenticación | en progreso
+- 2026-04-29 16:35 | jira-issues | Reintento fallido: API Jira sigue bloqueada por consentimiento explícito de Cloud ID | error
+- 2026-04-29 16:36 | jira-workaround | Creado docs/jira-initial-issues-bulk.txt para alta manual masiva de T-1.03, T-2.01 y T-2.02 | completado
+- 2026-04-29 16:51 | jira-access | Iniciada nueva verificación mínima de acceso a Jira tras cambios en proyecto y claves | en progreso
+- 2026-04-29 16:52 | jira-access | Verificada autenticación Atlassian activa; pendiente validación de acceso de escritura al proyecto ARTIQ sin operación destructiva | validado
+- 2026-04-29 16:54 | jira-issues | Iniciado intento de creación real de T-1.03 para validar permisos de escritura en ARTIQ | en progreso
+- 2026-04-29 16:56 | jira-issues | Fallo en creación de T-1.03: el Cloud ID sigue sin consentimiento explícito para operaciones de escritura | error
+- 2026-04-29 16:57 | jira-diagnostico | Validado bloqueo también con Cloud ID UUID directo; descarta formato URL y apunta a consentimiento MCP no concedido | validado
+- 2026-04-30 | jira-issues | Permisos MCP restaurados tras re-autorización Copilot; acceso de escritura a Jira confirmado | configurado
+- 2026-04-30 | jira-issues | Creado ARTIQ-5: T-1.03 Authentication & Authorization (JWT + Roles) | creado
+- 2026-04-30 | jira-issues | Creado ARTIQ-6: T-2.01 Define Domain Entities (TypeORM) | creado
+- 2026-04-30 | jira-issues | Creado ARTIQ-7: T-2.02 Database Setup & Migrations | creado
+- 2026-04-30 10:07 | mcp-diagnostico | Analizado error "MCP App: MPC -32601 Method not found" en logs de VS Code | en progreso
+- 2026-04-30 10:07 | mcp-diagnostico | Confirmado en renderer.log repetición del error y ausencia de fallo de escritura Jira | validado
+- 2026-04-30 10:12 | mcp-validacion | Escaneados logs de sesión actual 20260430T100305 para "MCP App", "-32601" y "Method not found" | validado
+- 2026-04-30 10:12 | mcp-validacion | Sin coincidencias en sesión actual; error no reproducido en logs activos | validado
+- 2026-04-30 10:14 | jira-diagnostico | Consultadas incidencias ARTIQ por JQL para confirmar duplicados ARTIQ-2/3/4 vs ARTIQ-5/6/7 | validado
+- 2026-04-30 10:14 | jira-diagnostico | Intento de transición con ID inválido para descubrir workflow devolvió error controlado | error
+- 2026-04-30 10:15 | jira-diagnostico | Obtenidas transiciones válidas de ARTIQ-2 (incluye Finalizado id 41) | validado
+- 2026-04-30 10:15 | jira-issues | Transicionados ARTIQ-2, ARTIQ-3 y ARTIQ-4 a estado Finalizado por duplicidad | configurado
+- 2026-04-30 10:15 | jira-issues | Añadidos comentarios en ARTIQ-2/3/4 apuntando a canónicos ARTIQ-5/6/7 | configurado
+- 2026-04-30 10:16 | jira-validacion | Verificado por JQL: ARTIQ-2/3/4 Finalizado y ARTIQ-5/6/7 en Por hacer | validado
+- 2026-04-30 10:20 | mcp-fix | Diagnosticado error MCP -32601: mongodb-mcp-server falla con exit code 1 por args ${input:...} vacios | validado
+- 2026-04-30 10:20 | mcp-fix | Añadido "disabled": true a io.github.mongodb-js/mongodb-mcp-server en mcp.json de VS Code | configurado
