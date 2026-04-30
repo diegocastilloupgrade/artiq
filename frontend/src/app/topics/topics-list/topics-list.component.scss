@@ -1,0 +1,29 @@
+.topics-card {
+  margin: 24px;
+}
+
+.filters {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  padding: 24px;
+}
+
+.error-msg {
+  color: #f44336;
+  text-align: center;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.topics-table {
+  width: 100%;
+}

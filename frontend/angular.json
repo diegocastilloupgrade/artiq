@@ -73,12 +73,18 @@
           "options": {
             "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "tsconfig.spec.json",
-            "assets": ["src/favicon.ico", "src/assets"],
-            "styles": ["src/styles.scss"],
+              "assets": ["src/assets"],
+              "styles": [
+                "node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+                "src/styles.scss"
+              ],
             "scripts": []
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
