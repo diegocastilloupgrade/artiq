@@ -27,3 +27,13 @@
 .topics-table {
   width: 100%;
 }
+
+.topic-link {
+  color: #1a73e8;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.topic-link:hover {
+  text-decoration: underline;
+}

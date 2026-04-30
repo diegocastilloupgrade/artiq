@@ -37,7 +37,9 @@
 
         <ng-container matColumnDef="name">
           <th mat-header-cell *matHeaderCellDef mat-sort-header>Nombre</th>
-          <td mat-cell *matCellDef="let t">{{ t.name }}</td>
+          <td mat-cell *matCellDef="let t">
+            <a class="topic-link" [routerLink]="['/topics', t.id]">{{ t.name }}</a>
+          </td>
         </ng-container>
 
         <ng-container matColumnDef="source">

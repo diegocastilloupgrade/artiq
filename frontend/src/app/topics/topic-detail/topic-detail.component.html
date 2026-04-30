@@ -1,0 +1,111 @@
+<mat-card class="topic-detail-card">
+  <mat-card-header>
+    <mat-card-title>Detalle de Topic</mat-card-title>
+  </mat-card-header>
+
+  <mat-card-content>
+    <div class="top-actions">
+      <a mat-stroked-button routerLink="/topics">Volver al listado</a>
+      <span *ngIf="topic" class="meta">ID: {{ topic.id }}</span>
+    </div>
+
+    <div *ngIf="loading" class="spinner-container">
+      <mat-spinner diameter="40"></mat-spinner>
+    </div>
+
+    <p *ngIf="error" class="error-msg">{{ error }}</p>
+    <p *ngIf="actionMessage" class="ok-msg">{{ actionMessage }}</p>
+
+    <div *ngIf="topic && !loading" class="detail-layout">
+      <div class="form-grid">
+        <mat-form-field appearance="outline">
+          <mat-label>Nombre</mat-label>
+          <input matInput [(ngModel)]="formName" />
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Fuente</mat-label>
+          <input matInput [value]="topic.source" disabled />
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Nombre de fuente</mat-label>
+          <input matInput [(ngModel)]="formSourceName" />
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Tipo</mat-label>
+          <mat-select [(ngModel)]="formType">
+            <mat-option *ngFor="let type of typeOptions" [value]="type">{{ type }}</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Estado</mat-label>
+          <mat-select [(ngModel)]="formStatus">
+            <mat-option *ngFor="let status of statusOptions" [value]="status">{{ status }}</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Prioridad</mat-label>
+          <input matInput type="number" min="0" [(ngModel)]="formPriority" />
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Descripción</mat-label>
+          <textarea matInput rows="3" [(ngModel)]="formDescription"></textarea>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Tags (separadas por coma)</mat-label>
+          <input matInput [(ngModel)]="formTags" />
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Fechas relevantes (coma)</mat-label>
+          <input matInput [(ngModel)]="formRelevantDates" />
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Notas internas</mat-label>
+          <textarea matInput rows="4" [(ngModel)]="formInternalNotes"></textarea>
+        </mat-form-field>
+      </div>
+
+      <div class="buttons-row">
+        <button mat-raised-button color="primary" (click)="saveChanges()" [disabled]="saving">
+          Guardar cambios
+        </button>
+        <button mat-stroked-button color="primary" (click)="markPrioritized()" [disabled]="saving">
+          Marcar como priorizado
+        </button>
+        <button mat-stroked-button color="warn" (click)="discardTopic()" [disabled]="saving">
+          Descartar topic
+        </button>
+      </div>
+
+      <mat-divider></mat-divider>
+
+      <section class="metadata">
+        <p><strong>Creado:</strong> {{ topic.created_at | date:'short' }}</p>
+        <p><strong>Actualizado:</strong> {{ topic.updated_at | date:'short' }}</p>
+      </section>
+
+      <mat-divider></mat-divider>
+
+      <section>
+        <h3>Artículos relacionados</h3>
+        <ul *ngIf="(topic.related_articles?.length ?? 0) > 0; else noArticles">
+          <li *ngFor="let article of topic.related_articles">
+            {{ article.title }}
+            <span *ngIf="article.status">({{ article.status }})</span>
+          </li>
+        </ul>
+        <ng-template #noArticles>
+          <p class="muted">No hay artículos relacionados para este topic.</p>
+        </ng-template>
+      </section>
+    </div>
+  </mat-card-content>
+</mat-card>

@@ -161,3 +161,5 @@ Entradas:
 - 2026-04-30 12:23 | pr-creation | Abierta PR #18 docs(T-3.02): traceability log and tasks update | completado
 - 2026-04-30 12:23 | merge | PR #18 mergeada en main (squash) | completado
 - 2026-04-30 12:23 | git | Creada rama docs/T-3.02-cierre-log para registrar cierre operativo final | completado
+- 2026-04-30 12:30 | jira | Creado ARTIQ-11: T-3.03 Topic detail view y transicionado a En curso | completado
+- 2026-04-30 12:30 | git | Creada rama feat/T-3.03-topic-detail-view desde main actualizado | completado

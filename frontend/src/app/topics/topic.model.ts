@@ -17,6 +17,13 @@ export enum TopicStatus {
   DISCARDED = 'discarded',
 }
 
+export interface RelatedArticle {
+  id: string;
+  title: string;
+  status?: string;
+  published_at?: string;
+}
+
 export interface Topic {
   id: string;
   name: string;
@@ -29,6 +36,7 @@ export interface Topic {
   tags?: string[];
   relevant_dates?: string[];
   internal_notes?: string;
+  related_articles?: RelatedArticle[];
   created_at: string;
   updated_at: string;
 }
