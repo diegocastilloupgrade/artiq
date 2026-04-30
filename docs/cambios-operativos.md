@@ -126,3 +126,7 @@ Entradas:
 - 2026-05-02 | feat | Actualizado app.module.ts: importados TopicsModule, ProductsModule, DraftsModule, CmsModule, LinkMonitoringModule, AnalyticsModule | completado
 - 2026-05-02 | fix | Corregidos errores TypeScript en update() de todos los servicios con cast as any | completado
 - 2026-05-02 | build | npm run build exitoso sin errores tras T-2.03 | validado
+- 2026-05-02 | git | Commit: feat(repositories): T-2.03 implement basic repositories for all domain entities (17 archivos, 381 inserciones) | completado
+- 2026-05-02 | git | Push de rama feat/T-2.03-basic-repositories al remoto | completado
+- 2026-05-02 | pr-creation | Abierta PR #14 feat(repositories): T-2.03 implement basic repositories for all domain entities | completado
+- 2026-05-02 | jira | ARTIQ-8 transicionado a Finalizado | completado
