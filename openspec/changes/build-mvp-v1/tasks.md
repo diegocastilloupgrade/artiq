@@ -84,7 +84,7 @@ Tasks are grouped by area. They are intended to be implemented incrementally.
   - discard topic.
 - Implement minimal validation as per spec.
 
-### T-3.02 – Topic list view (backoffice UI)
+### T-3.02 – Topic list view (backoffice UI) ✅
 
 - Implement a backoffice view that:
   - lists topics with fields: name, source, type, status, priority, created_at,

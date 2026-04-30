@@ -144,3 +144,15 @@ Entradas:
 - 2026-04-30 11:42 | merge | PR #15 mergeada en main (squash, sha 5a263c2) | completado
 - 2026-04-30 11:42 | jira | ARTIQ-9 transicionado a Finalizado | completado
 - 2026-04-30 11:42 | docs | tasks.md: T-3.01 marcado como completado (✅) | completado
+- 2026-04-30 12:07 | feat | Bootstrap frontend Angular 17 completado para T-3.02 (archivos src, rutas, config, interceptor, servicio y vista topics) | completado
+- 2026-04-30 12:07 | build | npm install en frontend completado (dependencias Angular/Material instaladas) | validado
+- 2026-04-30 12:07 | build | npx ng build --configuration=development completado exitosamente tras desactivar analytics localmente | validado
+- 2026-04-30 12:08 | git | Validado estado de rama feat/T-3.02-topic-list-view con cambios listos para commit | validado
+- 2026-04-30 12:15 | build | Revalidado frontend con npx ng build --configuration=development sin errores | validado
+- 2026-04-30 12:16 | git | Commit feat(T-3.02): bootstrap Angular app and implement topic list view | completado
+- 2026-04-30 12:16 | git | Push de rama feat/T-3.02-topic-list-view al remoto | completado
+- 2026-04-30 12:17 | pr-creation | Abierta PR #17 feat(T-3.02): Topic list view (backoffice UI) | completado
+- 2026-04-30 12:19 | merge | PR #17 mergeada en main (squash) | completado
+- 2026-04-30 12:20 | jira | ARTIQ-10 transicionado a En revisión | completado
+- 2026-04-30 12:20 | jira | ARTIQ-10 transicionado a Finalizado | completado
+- 2026-04-30 12:21 | git | Creada rama docs/T-3.02-cambios-log para PR separado de trazabilidad y tasks | completado
