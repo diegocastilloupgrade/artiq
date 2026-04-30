@@ -101,7 +101,7 @@ Tasks are grouped by area. They are intended to be implemented incrementally.
   - allows marking topic as prioritized,
   - allows discarding topic.
 
-### T-3.04 – External trend source adapter (initial)
+### ✅ T-3.04 – External trend source adapter (initial)
 
 - Implement a `TrendSourceAdapter` stub for the first trend source.
 - Define a method to fetch topics from that source.
