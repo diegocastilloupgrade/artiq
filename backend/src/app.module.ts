@@ -15,6 +15,12 @@ import { AnalyticsSnapshot } from './analytics/analytics-snapshot.entity';
 import { LinkRecord } from './link-monitoring/link-record.entity';
 import { LinkIncident } from './link-monitoring/link-incident.entity';
 import { User } from './users/user.entity';
+import { TopicsModule } from './topics/topics.module';
+import { ProductsModule } from './products/products.module';
+import { DraftsModule } from './drafts/drafts.module';
+import { CmsModule } from './cms/cms.module';
+import { LinkMonitoringModule } from './link-monitoring/link-monitoring.module';
+import { AnalyticsModule } from './analytics/analytics.module';
 
 @Module({
   imports: [
@@ -49,6 +55,12 @@ import { User } from './users/user.entity';
       },
     }),
     AuthModule,
+    TopicsModule,
+    ProductsModule,
+    DraftsModule,
+    CmsModule,
+    LinkMonitoringModule,
+    AnalyticsModule,
   ],
   providers: [
     {
