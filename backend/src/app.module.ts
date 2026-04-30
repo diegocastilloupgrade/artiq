@@ -21,6 +21,7 @@ import { DraftsModule } from './drafts/drafts.module';
 import { CmsModule } from './cms/cms.module';
 import { LinkMonitoringModule } from './link-monitoring/link-monitoring.module';
 import { AnalyticsModule } from './analytics/analytics.module';
+import { TrendsModule } from './trends/trends.module';
 
 @Module({
   imports: [
@@ -61,6 +62,7 @@ import { AnalyticsModule } from './analytics/analytics.module';
     CmsModule,
     LinkMonitoringModule,
     AnalyticsModule,
+    TrendsModule,
   ],
   providers: [
     {
