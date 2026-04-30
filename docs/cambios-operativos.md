@@ -113,3 +113,20 @@ Entradas:
 - 2026-05-01 | git | Push de rama feat/T-2.02-database-migrations al remoto | completado
 - 2026-05-01 | pr-creation | Abierta PR #13 feat(database): T-2.02 Set up database and migrations | completado
 - 2026-05-01 | jira | ARTIQ-7 transicionado a Finalizado | completado
+- 2026-05-02 | git | Creada rama feat/T-2.03-basic-repositories para T-2.03 | completado
+- 2026-05-02 | jira | ARTIQ-8 transicionado a En curso | completado
+- 2026-05-02 | feat | Creados topics.module.ts y topics.service.ts con TypeOrmModule.forFeature([Topic]) | completado
+- 2026-05-02 | feat | Creados products.module.ts y products.service.ts con TypeOrmModule.forFeature([Product]) | completado
+- 2026-05-02 | feat | Creados drafts.module.ts y drafts.service.ts con TypeOrmModule.forFeature([ArticleDraft, ProductPiece]) | completado
+- 2026-05-02 | feat | Creados cms.module.ts y cms.service.ts con TypeOrmModule.forFeature([CmsPublication]) | completado
+- 2026-05-02 | feat | Creados link-monitoring.module.ts y link-monitoring.service.ts con TypeOrmModule.forFeature([LinkRecord, LinkIncident]) | completado
+- 2026-05-02 | feat | Creados analytics.module.ts y analytics.service.ts con TypeOrmModule.forFeature([AnalyticsSnapshot]) | completado
+- 2026-05-02 | feat | Actualizado users.module.ts con TypeOrmModule.forFeature([User]) | completado
+- 2026-05-02 | feat | Actualizado users.service.ts: constructor con @InjectRepository(UserEntity) y metodos CRUD de entidad | completado
+- 2026-05-02 | feat | Actualizado app.module.ts: importados TopicsModule, ProductsModule, DraftsModule, CmsModule, LinkMonitoringModule, AnalyticsModule | completado
+- 2026-05-02 | fix | Corregidos errores TypeScript en update() de todos los servicios con cast as any | completado
+- 2026-05-02 | build | npm run build exitoso sin errores tras T-2.03 | validado
+- 2026-05-02 | git | Commit: feat(repositories): T-2.03 implement basic repositories for all domain entities (17 archivos, 381 inserciones) | completado
+- 2026-05-02 | git | Push de rama feat/T-2.03-basic-repositories al remoto | completado
+- 2026-05-02 | pr-creation | Abierta PR #14 feat(repositories): T-2.03 implement basic repositories for all domain entities | completado
+- 2026-05-02 | jira | ARTIQ-8 transicionado a Finalizado | completado

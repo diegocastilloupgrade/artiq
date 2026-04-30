@@ -58,7 +58,7 @@ Tasks are grouped by area. They are intended to be implemented incrementally.
 - Create migrations (or equivalent) for all core tables/collections.
 - Ensure basic CRUD operations are possible for core entities.
 
-### T-2.03 – Implement basic repositories
+### T-2.03 – Implement basic repositories ✅
 
 - Implement repository layer (or equivalent) for:
   - Topics
