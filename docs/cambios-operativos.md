@@ -130,3 +130,4 @@ Entradas:
 - 2026-05-02 | git | Push de rama feat/T-2.03-basic-repositories al remoto | completado
 - 2026-05-02 | pr-creation | Abierta PR #14 feat(repositories): T-2.03 implement basic repositories for all domain entities | completado
 - 2026-05-02 | jira | ARTIQ-8 transicionado a Finalizado | completado
+- 2026-04-30 | pr-merge | PR #14 mergeada a main: T-2.03 implement basic repositories | completado
