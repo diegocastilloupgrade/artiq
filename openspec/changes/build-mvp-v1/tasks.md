@@ -107,7 +107,7 @@ Tasks are grouped by area. They are intended to be implemented incrementally.
 - Define a method to fetch topics from that source.
 - Normalize the data into the internal `Topic` model.
 
-### T-3.05 – Topic import job (initial)
+### ✅ T-3.05 – Topic import job (initial)
 
 - Implement a simple job/process to:
   - call the `TrendSourceAdapter`,

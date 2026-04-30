@@ -177,3 +177,23 @@ Entradas:
 - 2026-04-30 13:01 | github | PR #22 creado y mergeado (squash) a main | completado
 - 2026-04-30 13:05 | jira | ARTIQ-12 transicionado a En revisión y luego a Finalizado | completado
 - 2026-04-30 13:05 | docs | T-3.04 marcado ✅ en tasks.md | completado
+- 2026-04-30 15:33 | infra | docker compose up -d postgres — contenedor artiq-postgres arrancado con imagen postgres:15-alpine | completado
+- 2026-04-30 15:35 | backend | Backend NestJS arrancado en puerto 3000, TypeORM conectado a PostgreSQL, seed de 2 usuarios | completado
+- 2026-04-30 15:36 | cors | Habilitado CORS en main.ts (origin: http://localhost:4200) para resolver bloqueo del frontend | completado
+- 2026-04-30 15:38 | auth | Marcados GET /topics y GET /topics/:id con @Public() — endpoints de lectura accesibles sin token | completado
+- 2026-04-30 15:41 | auth | Ajustado RolesGuard para respetar @Public() y evitar 403 en rutas publicas de topics | completado
+- 2026-04-30 15:43 | backend | Reproducido fallo en GET /topics tras fix de 403; detectado proceso duplicado y conflicto EADDRINUSE en puerto 3000 | error
+- 2026-04-30 15:45 | backend | Reiniciado backend en puerto 3000 y validado arranque correcto en modo watch | completado
+- 2026-04-30 15:46 | database | Ejecutada migracion inicial TypeORM para crear esquema (incluye tabla topics) | completado
+- 2026-04-30 15:47 | api | Validado GET /topics con respuesta HTTP 200 tras migraciones | validado
+- 2026-04-30 15:52 | frontend | Verificado puerto 4200 en uso por proceso Angular existente (PID 7928), evitando arranque duplicado | validado
+- 2026-04-30 15:53 | frontend | Validado frontend en http://localhost:4200 con respuesta HTTP 200 | validado
+- 2026-04-30 15:55 | topics | Diagnosticado listado vacio en frontend; tabla topics en PostgreSQL con 0 registros | validado
+- 2026-04-30 15:56 | analisis | Revisadas fuentes de datos de topics (flujo actual y fuentes previstas segun OpenSpec/T-3.04/T-3.05) | validado
+- 2026-04-30 15:59 | backend | Implementado seed automatico en TopicsService para poblar topics de prueba cuando no existan registros | completado
+- 2026-04-30 16:00 | api | Validado GET /topics tras seed: endpoint devuelve listado con datos de prueba | validado
+- 2026-04-30 18:20 | git | Creada rama feat/T-3.05-topic-import-job para implementacion del job de importacion | completado
+- 2026-04-30 18:20 | backend | Creado backend/src/trends/trend-import.service.ts: TrendImportService con de-duplicacion por nombre | completado
+- 2026-04-30 18:20 | backend | Creado backend/src/trends/trend-import.controller.ts: POST /trends/import protegido (ADMIN) | completado
+- 2026-04-30 18:20 | backend | Actualizado backend/src/trends/trends.module.ts: importa TopicsModule, registra TrendImportController y TrendImportService | completado
+- 2026-04-30 18:20 | build | npx tsc --noEmit exitoso sin errores para T-3.05 | validado
