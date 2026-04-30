@@ -11,6 +11,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatSelectModule } from '@angular/material/select';
 import { Topic, TopicStatus, TopicType } from '../topic.model';
 import { TopicsService } from '../topics.service';
+import { ProductSearchComponent } from '../../products/product-search.component';
 
 @Component({
   selector: 'app-topic-detail',
@@ -26,6 +27,7 @@ import { TopicsService } from '../topics.service';
     MatInputModule,
     MatProgressSpinnerModule,
     MatSelectModule,
+    ProductSearchComponent,
   ],
   templateUrl: './topic-detail.component.html',
   styleUrls: ['./topic-detail.component.scss'],
