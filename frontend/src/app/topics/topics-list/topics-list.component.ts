@@ -7,6 +7,7 @@ import {
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { RouterLink } from '@angular/router';
 import { MatTableDataSource, MatTableModule } from '@angular/material/table';
 import { MatSort, MatSortModule } from '@angular/material/sort';
 import { MatSelectModule } from '@angular/material/select';
@@ -27,6 +28,7 @@ interface TopicFilter {
   imports: [
     CommonModule,
     FormsModule,
+    RouterLink,
     MatTableModule,
     MatSortModule,
     MatSelectModule,

@@ -1,0 +1,60 @@
+.topic-detail-card {
+  margin: 24px;
+}
+
+.top-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.meta {
+  color: #5f6368;
+  font-size: 12px;
+}
+
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  padding: 24px;
+}
+
+.detail-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+.full-width {
+  grid-column: 1 / -1;
+}
+
+.buttons-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.error-msg {
+  color: #d93025;
+}
+
+.ok-msg {
+  color: #0f9d58;
+}
+
+.metadata {
+  display: grid;
+  gap: 4px;
+}
+
+.muted {
+  color: #5f6368;
+}
