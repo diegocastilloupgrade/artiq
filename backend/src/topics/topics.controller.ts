@@ -15,6 +15,7 @@ import {
 import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
 import { RolesGuard } from '../auth/guards/roles.guard';
 import { Roles } from '../auth/decorators/roles.decorator';
+import { Public } from '../auth/decorators/public.decorator';
 import { UserRole } from '../auth/user-role.enum';
 import { TopicSource } from './topic.entity';
 import { TopicsService } from './topics.service';
@@ -33,11 +34,13 @@ export class TopicsController {
     return this.topicsService.create({ ...dto, source });
   }
 
+  @Public()
   @Get()
   findAll() {
     return this.topicsService.findAll();
   }
 
+  @Public()
   @Get(':id')
   async findOne(@Param('id') id: string) {
     const topic = await this.topicsService.findOne(id);
