@@ -102,6 +102,7 @@
             <span *ngIf="article.status">({{ article.status }})</span>
           </li>
         </ul>
+        <ng-template #noArticles>
           <p class="muted">No hay artículos relacionados para este topic.</p>
         </ng-template>
       </section>
@@ -109,7 +110,7 @@
       <mat-divider></mat-divider>
 
       <section class="product-search-section">
-        <app-product-search [topicId]="topic?.id"></app-product-search>
+        <app-product-search [topicId]="topic.id"></app-product-search>
       </section>
     </div>
   </mat-card-content>

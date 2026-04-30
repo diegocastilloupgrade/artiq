@@ -144,12 +144,13 @@ Tasks are grouped by area. They are intended to be implemented incrementally.
   - returns normalized product data.
 - Implemented: POST /products/search-by-topic/:topicId with integration to TopicsService
 
-### T-4.04 – Product search UI
+### ✅ T-4.04 – Product search UI
 
 - Implement backoffice UI in topic context:
   - show candidate products for a topic,
   - display name, image, short description, price, affiliate URL,
   - allow basic filtering (e.g. by price).
+- Implemented: Angular `ProductSearchComponent` integrated in topic detail with filters, results grid, selection state, and affiliate link actions.
 
 ### T-4.05 – Product selection for single-product article
 

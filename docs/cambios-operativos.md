@@ -211,3 +211,12 @@ Entradas:
 - 2026-04-30 18:36 | backend | Actualizado backend/src/products/products.controller.ts: POST /products/search-by-topic/:topicId | completado
 - 2026-04-30 18:36 | backend | Actualizado backend/src/products/products.module.ts: importado TopicsModule para inyeccion de TopicsService | completado
 - 2026-04-30 18:36 | build | npx tsc --noEmit exitoso sin errores para T-4.03 (backend) | validado
+- 2026-04-30 19:02 | frontend | Corregido product-search.component.ts: sintaxis de template de precio (${{ }} -> interpolacion Angular valida) | completado
+- 2026-04-30 19:02 | frontend | Ajustados imports en product-search.component.ts (rutas relativas y eliminacion de MatImageModule inexistente) | completado
+- 2026-04-30 19:03 | build | Validado frontend con npx tsc --noEmit tras correcciones de T-4.04 | validado
+- 2026-04-30 19:03 | git | Durante sincronizacion de main se produjo conflicto en docs/cambios-operativos.md; conflicto resuelto conservando entradas T-4.01/T-4.03 | corregido
+- 2026-04-30 19:04 | frontend | Corregido topic-detail.component.html: agregado bloque ng-template #noArticles faltante | completado
+- 2026-04-30 19:04 | frontend | Corregido binding de topicId en app-product-search (topic?.id -> topic.id) para cumplir tipado estricto | completado
+- 2026-04-30 19:04 | build | Validado frontend con npm run build sin errores para cierre de T-4.04 | validado
+- 2026-04-30 19:04 | docs | T-4.04 marcado ✅ en openspec/changes/build-mvp-v1/tasks.md | completado
+- 2026-04-30 19:05 | git | Creada rama feat/T-4-04-product-search-ui para cierre de cambios de T-4.04 | completado
