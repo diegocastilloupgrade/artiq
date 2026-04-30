@@ -130,3 +130,17 @@ Entradas:
 - 2026-05-02 | git | Push de rama feat/T-2.03-basic-repositories al remoto | completado
 - 2026-05-02 | pr-creation | Abierta PR #14 feat(repositories): T-2.03 implement basic repositories for all domain entities | completado
 - 2026-05-02 | jira | ARTIQ-8 transicionado a Finalizado | completado
+- 2026-04-30 11:42 | jira | Creado ARTIQ-9: T-3.01 Topic CRUD (manual) | creado
+- 2026-04-30 11:42 | git | Creada rama feat/T-3.01-topic-crud | completado
+- 2026-04-30 11:42 | jira | ARTIQ-9 transicionado a En curso | configurado
+- 2026-04-30 11:42 | feat | Creado backend/src/topics/dto/create-topic.dto.ts con validaciones class-validator | completado
+- 2026-04-30 11:42 | feat | Creado backend/src/topics/dto/update-topic.dto.ts con todos los campos opcionales | completado
+- 2026-04-30 11:42 | feat | Creado backend/src/topics/topics.controller.ts con 5 endpoints REST (POST, GET, GET/:id, PATCH/:id, DELETE/:id) | completado
+- 2026-04-30 11:42 | feat | Actualizado backend/src/topics/topics.module.ts: añadido controllers: [TopicsController] | completado
+- 2026-04-30 11:42 | build | npx tsc --noEmit exitoso sin errores para T-3.01 | validado
+- 2026-04-30 11:42 | git | Commit feat(T-3.01): Topic CRUD endpoints with DTO validation (4 archivos, 184 inserciones) | completado
+- 2026-04-30 11:42 | git | Push de rama feat/T-3.01-topic-crud al remoto | completado
+- 2026-04-30 11:42 | pr-creation | Abierta PR #15 feat(T-3.01): Topic CRUD endpoints with DTO validation | completado
+- 2026-04-30 11:42 | merge | PR #15 mergeada en main (squash, sha 5a263c2) | completado
+- 2026-04-30 11:42 | jira | ARTIQ-9 transicionado a Finalizado | completado
+- 2026-04-30 11:42 | docs | tasks.md: T-3.01 marcado como completado (✅) | completado
